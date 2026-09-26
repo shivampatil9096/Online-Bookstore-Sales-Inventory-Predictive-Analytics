@@ -149,12 +149,6 @@ LIMIT 10;
 
 ---
 
-## 🚀 How to Run This Yourself
-
-1. Clone the repo: `git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git`
-2. Open `data/Bookstore_Dataset.xlsx` in Excel, or load `sql/bookstore_queries.sql` into any SQL engine (SQLite/PostgreSQL/MySQL).
-3. Open `PowerBI/Bookstore_Dashboard.pbix` in Power BI Desktop to explore the live model and DAX measures.
-
 ## 🧠 Skills Demonstrated
 
 `SQL Joins & Aggregation` · `Power BI Data Modeling` · `DAX (SUM, DIVIDE, CALCULATE, DATEADD)` · `Forecasting & Seasonality Analysis` · `Dashboard UX (slicers, conditional formatting)` · `Excel`
