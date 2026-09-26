@@ -145,7 +145,7 @@ LIMIT 10;
 ============================================================= -->
 ## 📁 Dataset
 
-📥 **Excel workbook (Genres, Authors, Books, Orders):** [`data/Bookstore_Dataset.xlsx`](Bookstore_Sales_Inventory_Data.xl)
+📥 **Excel workbook (Genres, Authors, Books, Orders):** [`data/Bookstore_Dataset.xlsx`](Bookstore_Sales_Inventory_Data.xlsx)
 
 ---
 
