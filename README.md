@@ -44,11 +44,11 @@ This project analyzes sales and inventory data for an online bookstore covering 
 
 | Overview | Inventory Risk View |
 |---|---|
-| ![Dashboard overview]() | ![Inventory risk alerts](screenshots/inventory_alerts.png) |
+| ![Dashboard overview](overview_dashboard.png) | ![Inventory risk alerts](inventory_dashboard.png) |
 
 | Revenue Trend & Forecast | Genre / Author Breakdown |
 |---|---|
-| ![Forecast chart](screenshots/forecast_trend.png) | ![Genre breakdown](screenshots/genre_breakdown.png) |
+| ![Forecast chart](revenue_dashboard.png) | ![Genre breakdown](genre_dashboard.png) |
 
 ---
 
@@ -57,7 +57,6 @@ This project analyzes sales and inventory data for an online bookstore covering 
 ============================================================= -->
 ## 🗄️ SQL Queries & Results
 
-📄 Full script: [`sql/bookstore_queries.sql`](sql/bookstore_queries.sql)
 
 ### 1. Revenue by Genre
 ```sql
@@ -69,7 +68,7 @@ JOIN Genres g ON b.genre_id = g.genre_id
 GROUP BY g.genre_name
 ORDER BY total_revenue DESC;
 ```
-![Query 1 result](screenshots/sql/query1_revenue_by_genre.png)
+![Query 1 result](query1_revenue_by_genre.png)
 
 ### 2. Top 20 Authors by Revenue
 ```sql
@@ -81,7 +80,7 @@ GROUP BY a.author_name
 ORDER BY total_revenue DESC
 LIMIT 20;
 ```
-![Query 2 result](screenshots/sql/query2_top_authors.png)
+![Query 2 result](query2_top_authors.png)
 
 ### 3. Monthly Sales Trend (Seasonality)
 ```sql
@@ -91,7 +90,7 @@ FROM Orders
 GROUP BY sales_month
 ORDER BY sales_month;
 ```
-![Query 3 result](screenshots/sql/query3_monthly_trend.png)
+![Query 3 result](query3_monthly_trend.png)
 
 ### 4. Order Velocity per Book
 ```sql
@@ -102,7 +101,7 @@ JOIN Books b ON o.book_id = b.book_id
 GROUP BY b.title
 ORDER BY total_units DESC;
 ```
-![Query 4 result](screenshots/sql/query4_order_velocity.png)
+![Query 4 result](query4_order_velocity.png)
 
 ### 5. Current Stock Levels by Genre
 ```sql
@@ -112,7 +111,7 @@ JOIN Genres g ON b.genre_id = g.genre_id
 GROUP BY g.genre_name
 ORDER BY total_stock_on_hand ASC;
 ```
-![Query 5 result](screenshots/sql/query5_stock_by_genre.png)
+![Query 5 result](query5_stock_by_genre.png)
 
 ### 6. Low-Stock / Reorder Alert List
 ```sql
@@ -123,7 +122,7 @@ JOIN Genres  g ON b.genre_id  = g.genre_id
 WHERE b.stock_qty <= b.reorder_level
 ORDER BY b.stock_qty ASC;
 ```
-![Query 6 result](screenshots/sql/query6_low_stock_alerts.png)
+![Query 6 result](query6_low_stock_alerts.png)
 
 ### 7. Top-Selling Titles (Last 90 Days)
 ```sql
@@ -135,7 +134,9 @@ GROUP BY b.title
 ORDER BY units_sold_90d DESC
 LIMIT 10;
 ```
-![Query 7 result](screenshots/sql/query7_top_sellers_90d.png)
+![Query 7 result](query7_top_sellers_90d.png)
+
+📄 Full script: [`sql/bookstore_queries.sql`](sql/bookstore_queries.sql)
 
 ---
 
