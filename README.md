@@ -136,7 +136,7 @@ LIMIT 10;
 ```
 ![Query 7 result](query7_top_sellers_90d.png)
 
-📄 Full script: [`sql/bookstore_queries.sql`](sql/bookstore_queries.sql)
+📄 Full script: [`sql/bookstore_queries.sql`](Bookstore_SQL_Queries.sql)
 
 ---
 
@@ -145,7 +145,7 @@ LIMIT 10;
 ============================================================= -->
 ## 📁 Dataset
 
-📥 **Excel workbook (Genres, Authors, Books, Orders):** [`data/Bookstore_Dataset.xlsx`](data/Bookstore_Dataset.xlsx)
+📥 **Excel workbook (Genres, Authors, Books, Orders):** [`data/Bookstore_Dataset.xlsx`](Bookstore_Sales_Inventory_Data.xl)
 
 ---
 
